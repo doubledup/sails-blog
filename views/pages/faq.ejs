@@ -3,9 +3,8 @@
     <h1>FAQ</h1>
     <div>
       <hr class="mt-4 mb-4"/>
-      <h4>What is this page for?</h4>
-      <p>This is a template for building your own "Frequently Asked Questions" page.  It was generated automatically as part of the expanded seed app provided by <a href="https://sailsjs.com/about">Sails</a>.  On top of its primary purpose as a template, this page doubles as a handy guide about the seed app itself.</p>
-      <p><small>Before you deploy this app to production, be sure to replace the content on this page with real questions and answers that are relevant to your project.  Or if you don't need an FAQ, just delete this file altogether.</small></p>
+      <h4>Why is this a thing?</h4>
+      <p>Because everyone needs yet another example blog site!</p>
     </div>
     <div>
       <hr class="mt-4 mb-4"/>
@@ -75,21 +74,6 @@
       <hr class="mt-4 mb-4"/>
       <h4>How do I verify my user's email addresses?</h4>
       <p>By default, email verification is neither required for signup, nor for when an existing user changes their email address from their account page.  To enable an email verification step for both of these actions, open <code>config/custom.js</code> and change <code>verifyEmailAddresses: false</code> to <code>verifyEmailAddresses: true</code>.</p>
-    </div>
-    <div>
-      <hr class="mt-4 mb-4"/>
-      <h4>How do I finish setting up Sendgrid?</h4>
-      <p>To use Sendgrid, you'll need to <a target="_blank" href="https://www.sendgrid.com/">sign up for an account</a>. (While this <em>is</em> a paid service at higher usage levels, you should be able to use Sendgrid in development without having to provide any credit card information.)</p>
-      <p>After you've created an account, you'll need to add your Sendgrid API secret to your custom config. (In development, this will be either in <code>config/custom.js</code>, or in a <code>local.js</code> file you add to your <code>config/</code> folder. For your staging or production deployment, you'll want to set these using system environment variables -- aka "config variables" in Heroku.)</p>
-      <p>If you already own a domain for your app, you can follow Sendgrid's instructions for configuring a sending domain.</p>
-      <p>Otherwise, to send emails from this app <em>without</em> configuring a sending domain, you can <a target="_blank" href="https://app.sendgrid.com/settings/sender_auth">verify a single sender</a>. Just be sure to set <code>sails.config.custom.fromEmailAddress</code> to use the verified email, or there will be errors from the endpoints that attempt to send emails.</p>
-    </div>
-    <div>
-      <hr class="mt-4 mb-4"/>
-      <h4>How do I finish setting up Stripe?</h4>
-      <p>To use Stripe for your app's payment processing, you'll need to <a target="_blank" href="https://stripe.com">sign up for an account</a>.</p>
-      <p>Once you have an account, you'll need to include your publishable and secret keys in your app's custom config as <code>sails.config.custom.stripePublishableKey</code> and <code>sails.config.custom.stripeSecret</code>. In development, you can add your test keys to <code>config/custom.js</code>, or in a <code>local.js</code> file you add to your <code>config/</code> folder.</p>
-      <p>In your staging or production deployment, you'll want to set your API keys using system environment variables (aka "config variables" in Heroku), and you will need ensure that your site meets Stripe's HTTPS requirements in order for Stripe Checkout to work. For more information, see Stripe's <a target="_blank" href="https://stripe.com/docs/checkout">Detailed Checkout Guide</a>.</p>
     </div>
     <div>
       <hr class="mt-4 mb-4"/>
