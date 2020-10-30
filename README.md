@@ -6,5 +6,5 @@ Get started with
 
 ```
 npm install
-npx sails lift
+npm run dev
 ```
